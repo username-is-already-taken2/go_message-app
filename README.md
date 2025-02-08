@@ -8,9 +8,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 TODO:
  - [x] make wrapper
- - [ ] sast - github action
+ - [x] sast - github action
  - [x] lint - github action
  - [ ] build
+
+Fluff:
+- [ ] Generate Favicon.ico
+- [ ] Publish scan results
+
 
 ## MakeFile
 
@@ -65,3 +70,13 @@ Go Binary
 ```
 go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.63.4
 ```
+
+### semgrep
+Docker 
+```
+docker run -it --rm -v $(pwd):/app -w /app semgrep/semgrep semgrep scan --config=p/gosec --disable-version-check --oss-only --metrics=off --verbose .
+```
+Additional args for later development
+`--error`
+`--junit-xml`
+`--junit-xml-output=VAL`
