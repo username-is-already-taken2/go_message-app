@@ -1,6 +1,7 @@
 package server
 
 import (
+	"context"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -13,7 +14,7 @@ func TestMessageHandler(t *testing.T) {
 	r := gin.New()
 	r.GET("/", s.MessageHandler)
 	// Create a test HTTP request
-	req, err := http.NewRequest("GET", "/", nil)
+	req, err := http.NewRequestWithContext(context.Background(), "GET", "/", http.NoBody)
 	if err != nil {
 		t.Fatal(err)
 	}

@@ -25,7 +25,7 @@ func (s *Server) RegisterRoutes() http.Handler {
 	return r
 }
 
-func (s *Server) MessageHandler(c *gin.Context) {
+func (*Server) MessageHandler(c *gin.Context) {
 	resp := make(map[string]string)
 	resp["message"] = "Hello World"
 
