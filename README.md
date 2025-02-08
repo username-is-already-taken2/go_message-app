@@ -10,7 +10,9 @@ TODO:
  - [x] make wrapper
  - [x] sast - github action
  - [x] lint - github action
- - [ ] build
+ - [x] build - github action
+ - [x] release - github action
+ - [x] chain - github action
 
 Fluff:
 - [ ] Generate Favicon.ico

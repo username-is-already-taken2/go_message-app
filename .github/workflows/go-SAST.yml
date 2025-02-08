@@ -26,4 +26,4 @@ jobs:
         pip install semgrep
 
     - name: Run Semgrep scan
-      run: semgrep scan --config=p/gosec --disable-version-check --oss-only --metrics=off --verbose .
+      run: semgrep scan --config=p/gosec --disable-version-check --oss-only --metrics=off --verbose --error .
