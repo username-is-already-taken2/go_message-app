@@ -1,7 +1,7 @@
 name: Static Application Security Testing
-## Only trigger tests if source has changed
+
 on:
-  push:
+  pull_request:
     paths:
     - '**.go'
     - '**.mod'
