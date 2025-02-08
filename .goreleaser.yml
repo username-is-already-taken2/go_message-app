@@ -7,7 +7,7 @@ env:
 - PACKAGE_PATH=github.com/username-is-already-taken2/go_message-app/cmd
 
 builds:
-- binary: "{{ .ProjectName }}"
+- binary: "message-app"
   main: ./cmd/api
   goos:
   - darwin
