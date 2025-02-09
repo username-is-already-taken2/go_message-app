@@ -7,8 +7,6 @@ on:
 jobs:
   trigger-target-repo:
     runs-on: ubuntu-latest
-    permissions:
-      actions: write
     steps:
     - name: Send repo dispatch event
       run: |
