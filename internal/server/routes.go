@@ -27,7 +27,7 @@ func (s *Server) RegisterRoutes() http.Handler {
 
 func (*Server) MessageHandler(c *gin.Context) {
 	resp := make(map[string]string)
-	resp["message"] = "Hello World"
+	resp["message"] = "Hello from Mondoo Engineer!"
 
 	c.JSON(http.StatusOK, resp)
 }
