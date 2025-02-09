@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"log"
+	mrand "math/rand"
 	"net/http"
 	"os/signal"
 	"syscall"
@@ -54,4 +55,10 @@ func main() {
 	// Wait for the graceful shutdown to complete
 	<-done
 	log.Println("Graceful shutdown complete.")
+}
+
+func main2() {
+	// ok: math-random-used
+	bad := mrand.Int()
+	println(bad)
 }
