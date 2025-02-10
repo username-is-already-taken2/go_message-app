@@ -21,6 +21,7 @@ func (s *Server) RegisterRoutes() http.Handler {
 	}))
 
 	r.GET("/", s.MessageHandler)
+	r.GET("/_/healthz", s.HealthzHandler)
 
 	return r
 }
@@ -28,6 +29,13 @@ func (s *Server) RegisterRoutes() http.Handler {
 func (*Server) MessageHandler(c *gin.Context) {
 	resp := make(map[string]string)
 	resp["message"] = "Hello from Mondoo Engineer!"
+
+	c.JSON(http.StatusOK, resp)
+}
+
+func (*Server) HealthzHandler(c *gin.Context) {
+	resp := make(map[string]string)
+	resp["status"] = "ok"
 
 	c.JSON(http.StatusOK, resp)
 }

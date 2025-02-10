@@ -18,7 +18,7 @@ Fluff:
 - [x] Pass TAG in trigger payload
 - [ ] Generate Favicon.ico
 - [ ] Publish scan results
-- [ ] Added health check
+- [x] Added health check
 
 
 ## MakeFile
@@ -84,3 +84,10 @@ Additional args for later development
 `--error`
 `--junit-xml`
 `--junit-xml-output=VAL`
+
+# Version Table
+| Version | Date | Description of Change | Coder |
+|---|---|---|---|
+| 1.1.0 | 2025.02.10 | Added Health check route, refactored tests | Gary Bright |
+| 1.0.0 | 2025.02.10 | First Production Release | Gary Bright |
+

@@ -1,11 +1,6 @@
 name: Static Application Security Testing
 
 on:
-  pull_request:
-    paths:
-    - '**.go'
-    - '**.mod'
-    - 'go.sum'
   workflow_dispatch:
 
 
