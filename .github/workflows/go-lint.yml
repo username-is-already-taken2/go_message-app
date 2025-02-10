@@ -1,11 +1,6 @@
 name: Code Lint
 
 on:
-  pull_request:
-    paths:
-    - '**.go'
-    - '**.mod'
-    - 'go.sum'
   workflow_dispatch:
 
 
