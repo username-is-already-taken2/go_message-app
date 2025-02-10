@@ -15,9 +15,10 @@ TODO:
  - [x] chain - github action
 
 Fluff:
-- [ ] Pass TAG payload
+- [x] Pass TAG in trigger payload
 - [ ] Generate Favicon.ico
 - [ ] Publish scan results
+- [ ] Added health check
 
 
 ## MakeFile
